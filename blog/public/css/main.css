@@ -1,0 +1,374 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*font-family: 'Muli', sans-serif; */
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #f1f1f1;
+}
+.containerr{
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header-top{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.header-top h1{
+    font-size: 50px;
+    font-weight: 900;
+    float: left;
+    margin-left: 30px;
+    line-height: 200px;
+    
+}
+.header-top span{
+    color:green;
+}
+.header-top small{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #777;
+}
+
+.menu-icon{
+    color: black;
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 10px;
+    left: 670px;
+   /* border: 1px solid black;*/
+    line-height: 29px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.menu-icon:hover{
+    background-color: aqua;
+    color: white;
+}
+.nav{
+    width:100%;
+    height: 50px;
+    background-color: #374147;
+    font-weight: 700;
+    display: block;  
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav ul li{
+    display: inline-block;    
+}
+.nav ul li a{
+    text-decoration: none;
+    line-height: 50px;
+    display: inline-block;
+    color: white;
+    padding: 0px 15px;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid white;
+    background-color: #fe7549;
+}
+.nav ul li a.active{
+    border-bottom: 2px solid white;
+    background-color: #fe7549;
+}
+
+div.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.33);
+    /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.05));*/
+}
+
+.latest{
+    width: 100%;
+    height: 390px;
+    /*overflow: hidden;*/
+    margin-top: 20px;
+}
+
+.latest .left span{
+    width: 705px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding: 10px 0 15px 20px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+}
+
+.latest .left{
+    float: left;
+    width: 705px;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+       
+}
+.latest .left .content{
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 45px;
+}
+.latest .left .content h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.latest .left .content p{
+    color: white;
+    font-size: 15px;
+}
+
+
+.latest .left img{
+    width: 705px;
+    height: 390px;
+}
+
+.latest .right{
+    width: 392px;
+    float: right;
+    height: 390px;
+}
+.latest .right h3{
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+}
+.latest .right .content{
+    position: absolute;
+    bottom: 30px;
+    padding: 5px 20px;
+}
+.latest .right span{
+    width: 391px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding: 7px 0px 7px 20px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+}
+.latest .right .top{
+    width: 393px;
+    height: 194px;
+    position: relative;
+    
+}
+.latest .right .buttom{
+    width: 392px;
+    height: 194px;
+    margin-top: 3px;
+    position: relative;
+}
+
+.top .cover:hover, .buttom .cover:hover, .left .cover:hover{ 
+    color: red;
+    background-color: rgba(0, 0, 0, 0.43);
+    
+} 
+
+.main-content {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+    color: #444;
+    
+    
+}
+
+.main-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fe7549;
+}
+
+.main-content h2, .main-content h3, .main-content h4{
+    color: #595757;
+}
+
+.left-side {
+    float: left;
+    width: 730px;
+    
+}
+
+.left-side h2{
+    font-weight: 600;
+}
+.right-side {
+    float: right;
+    width: 350px;
+    overflow: hidden;
+    
+}
+
+.right-side h5{
+    width: 305px;
+    font-weight: 600;
+    color: #595757;
+    
+}
+.right-side h3{
+    margin-bottom: 15px;
+    
+}
+
+.right-side a{
+    color: #444;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: #212c3a;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+    color: white;
+}
+.post, .sidebar, .about, .contact{
+    border-radius: 0px;
+    background-color: white;
+    padding: 25px;
+    margin: 0 0 15px 0;
+}
+.post{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fe7549;
+    position: relative;
+    
+}
+
+.post i{
+    font-size: 13px;
+    color:darkgrey;
+    margin-left: 7px;
+    line-height: 40px;
+}
+.post a i{
+    color: white;
+}
+.post .content{
+    overflow: hidden;
+    margin-top: 10px;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.post .content a > img{
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+.post .content p{
+    width: 350px;
+    float: right;
+    padding-top: 0;
+    font-size: 15px;
+    
+}
+.sidebar{
+    background-color: white;
+    padding: 20px;
+}
+a:hover, a:visited, a:active, a:link{
+    text-decoration: none;
+    
+}
+h1, h2, h3, h5{
+    margin: 0;
+}
+a.more{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    padding: 0px 6px 0px 6px;
+    display: block;
+    background-color: #fe7549;
+    color: white;
+    outline: 0;
+    transition: background-color .15s ease 0s,color .15s ease 0s;
+    
+    
+    
+}
+a.more:hover{
+    background-color: darkred;
+}
+.popular-post{
+    margin-top: 10px;
+    overflow: hidden;
+}
+    .popular-post img{
+        width: 100px;
+        height: 70px;
+        float: left;
+    }
+.popular-post .right{
+    float: right;
+    width: 200px;
+}
+a .popular-post p{
+    font-size: 13px;
+    padding-top: 3px;
+    
+}
+.fb-page{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    
+    body{
+        
+    }
+    .menu-icon{
+        display: block;
+    }
+    .nav{
+        position: absolute;
+        top: 39px;
+        right: 12px;
+        width: 180px;
+        height: auto;
+        display: none;
+    }
+    .nav ul li{
+        width: 100%;
+    }
+    .nav ul li a{
+        display: block;
+        
+    }
+}
+
+

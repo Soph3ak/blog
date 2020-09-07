@@ -1,0 +1,76 @@
+.post{
+    height: auto;        
+}
+.post h1{
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.post .content{
+    height: auto;
+    
+}
+.post .content > img{
+    width: 100%;
+    height: auto;
+}
+
+.post .content > p{
+    margin-top: 30px;
+    width: 100%;
+    float: right;
+    padding-top: 0;
+    position: relative;
+    display: block;
+}
+
+
+.related-post {
+    clear: both;
+    width: 100%;
+}
+h3.related{
+   padding-top: 30px;
+   padding-bottom: 5px;
+   border-bottom: 3px solid #fe7549;
+}
+.related-post ul{
+    /*margin-top: 20px;*/
+    
+}
+.related-post li{
+    display: inline-block;
+    width: 216px;
+    height: 200px;
+    /*border: 1px solid black;*/
+    margin: 20px 2.5px 0 2.5px; 
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+/*.related-post li a > img{
+   width: 10px;
+   height: 10px;
+    
+}*/
+
+.post .related-post a > img{
+    width: 216px;
+    height: 140px;
+    float: none;
+}
+.related-post a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 100;
+}
+.related-post h4{
+    clear: both;
+    padding-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
