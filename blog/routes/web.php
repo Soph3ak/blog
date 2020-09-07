@@ -22,6 +22,6 @@ Route::get('/contact', 'PagesController@contact')->name('contact');
 Route::get('/readMore', 'PagesController@readMore')->name('readMore');
 
 Route::get('/test', function (){
-    return 'Stop haha why dude?';
+    return 'Hello world ok';
 });
 
