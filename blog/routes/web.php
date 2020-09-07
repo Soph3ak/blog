@@ -21,3 +21,7 @@ Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/contact', 'PagesController@contact')->name('contact');
 Route::get('/readMore', 'PagesController@readMore')->name('readMore');
 
+Route::get('/test', function (){
+    return 'Bye world';
+});
+
