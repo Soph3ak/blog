@@ -28,19 +28,8 @@
         @yield('content')
         <div class="footer">
             footer
-
         </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            var menu_icon = $(".menu-icon");
-            menu_icon.click(function(){
-                $(".nav").fadeToggle();
-
-            });
-        });
-    </script>
     @yield('script')
 </body>
 </html>

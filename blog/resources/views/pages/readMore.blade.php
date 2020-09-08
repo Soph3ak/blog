@@ -83,7 +83,7 @@
                     <p>The initial design and construction of the temple took place in the first half of the 12th century, during the reign of Suryavarman II (ruled 1113 – c. 1150).</p>
                 </div>
             </div>
-
-
         </div>
+@endsection
+@section('script')
 @endsection
