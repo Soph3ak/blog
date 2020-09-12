@@ -1,12 +1,13 @@
 +Posts
     - id -> PK
     - title
-    - paragraph
-    - timestamp
+    - paragraph      
     - posted_by -> FK(Users)
-    - category -> FK(Categories)
+    - category  -> FK(Categories)   
+    - timestamp
     
 +Posts_Categories
+    - id -> PK
     - posts_id        => FK(Posts)
     - categories_id   => FK(Categories)
     
@@ -22,8 +23,10 @@
     - phone
     - role -> FK(Roles)
     - Avatar
+    - timestamp
     
 +Users_Roles  
+    - id -> PK
     - users_id => FK(Users)
     - roles_id => FK(Roles)
     
@@ -31,4 +34,12 @@
     - id -> PK
     - role_name
     
++Comments
+    - id -> PK
+    - comment
+    - posts_id      -> FK(Posts)
+    - commented_by  -> FK(Users)
+    - timestamp
+    
+
 
