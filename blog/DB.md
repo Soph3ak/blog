@@ -3,7 +3,7 @@
     - title
     - paragraph      
     - posted_by -> FK(Users)
-    - category  -> FK(Categories)   
+    - category_id  -> FK(Categories)   
     - timestamp
     
 +Posts_Categories
@@ -13,15 +13,15 @@
     
 +Categories
     - id -> PK
-    - name
+    - cate_name
     
 +Users
     - id -> PK
-    - username 
+    - name 
     - email
     - password
-    - phone
-    - role -> FK(Roles)
+    - phone_number
+    - role_id -> FK(Roles)
     - Avatar
     - timestamp
     
