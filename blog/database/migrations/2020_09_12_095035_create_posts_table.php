@@ -18,9 +18,6 @@ class CreatePostsTable extends Migration
             $table->string('title',255);
             $table->text('paragraph');
             $table->integer('posted_by')->unsigned();
-            $table->foreign('posted_by')->references('id')->on('users');
-            $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }

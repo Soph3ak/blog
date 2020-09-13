@@ -20,8 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('phone_number',20);
             $table->binary('avatar');
-            $table->integer('role_id')->unsigned();
-            $table->foreign('role_id')->references('id')->on('roles');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
