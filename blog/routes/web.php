@@ -22,5 +22,6 @@ Route::get('/contact', 'PagesController@contact')->name('contact');
 Route::get('/readMore', 'PagesController@readMore')->name('readMore');
 
 Route::get('/dashboard', 'AdminPagesController@dashboard')->name('dashboard');
-Route::get('/posts', 'AdminPagesController@posts')->name('dashboard');
 
+//  =======posts=======
+Route::resource('posts','PostsController');

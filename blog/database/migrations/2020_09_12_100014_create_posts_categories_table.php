@@ -14,9 +14,9 @@ class CreatePostsCategoriesTable extends Migration
     public function up()
     {
         Schema::create('posts_categories', function (Blueprint $table) {
-            $table->increments('id')->unsigned();
-            $table->foreignId('posts_id')->constrained('posts')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreignId('categories_id')->constrained('categories')->onDelete('cascade')->onUpdate('cascade');
+//            $table->bigIncrements('id');
+            $table->foreignId('posts_id')->constrained('posts','id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('categories_id')->constrained('categories','id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

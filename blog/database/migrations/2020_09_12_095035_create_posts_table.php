@@ -14,10 +14,11 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->increments('id')->unsigned();
+//            $table->increments('id')->unsigned();
+            $table->bigIncrements('id');
             $table->string('title',255);
             $table->text('paragraph');
-            $table->integer('posted_by')->unsigned();
+            $table->foreignId('posted_by')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
