@@ -1,4 +1,5 @@
 @extends('master.master-admin')
+@section('title','Dashboard')
 @section('style')
 @endsection
 @section('content')
