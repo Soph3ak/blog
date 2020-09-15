@@ -9,9 +9,13 @@
             width: 40%;
         }
         @media screen and (max-width: 600px) {
-            body {
-                display: none;
+            tbody i.mr-1{
+                margin-right: 0!important;
             }
+            i.fa-pencil-alt{
+                padding: 0 2px!important;
+            }
+
         }
     </style>
 @endsection
