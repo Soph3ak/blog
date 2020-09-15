@@ -18,6 +18,7 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title',255);
             $table->text('paragraph');
+            $table->boolean('status')->default(0)->comment('0 is Private, 1 is Published');
             $table->foreignId('posted_by')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
