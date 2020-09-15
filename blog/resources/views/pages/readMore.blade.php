@@ -1,4 +1,5 @@
 @extends('master.master-pages')
+@section('title','ReadMore')
 @section('style')
     <link rel="stylesheet" type="text/css" href="{{asset('css/readMore.css')}}">
 @endsection

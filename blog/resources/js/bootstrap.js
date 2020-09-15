@@ -13,6 +13,13 @@ require('bootstrap');
 require('admin-lte');
 require('admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js');
 
+// DataTables
+require('admin-lte/plugins/datatables/jquery.dataTables.min.js');
+require('admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js');
+require('admin-lte/plugins/datatables-responsive/js/dataTables.responsive.min.js');
+require('admin-lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js');
+
+
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

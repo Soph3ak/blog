@@ -8,23 +8,20 @@ class PagesController extends Controller
 {
     function home()
     {
-        $title = 'Home';
-        return view('pages.home')->withTitle($title);
+
+        return view('pages.home');
     }
     function about()
     {
-        $title = 'About';
-        return view('pages.about')->withTitle($title);
+        return view('pages.about');
     }
     function contact()
     {
-        $title = 'Contact';
-        return view('pages.contact')->withTitle($title);
+        return view('pages.contact');
     }
     function readMore()
     {
-        $title = 'More';
-        return view('pages.readMore')->withTitle($title);
+        return view('pages.readMore');
     }
 
 }

@@ -1,5 +1,6 @@
 @extends('master.master-pages')
 @section('content')
+    @section('title','Home')
 
         <div class="latest">
             <a href="#">

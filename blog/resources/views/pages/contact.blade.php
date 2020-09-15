@@ -1,5 +1,6 @@
 @extends('master.master-pages')
 @section('content')
+    @section('title','Contact')
         <div class="main-content">
                <div class="contact">
                <h2 style="margin-bottom:20px">Contact</h2>

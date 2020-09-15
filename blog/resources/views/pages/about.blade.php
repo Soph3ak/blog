@@ -1,5 +1,6 @@
 @extends('master.master-pages')
         @section('content')
+            @section('title','About')
         <div class="main-content">
             <div class="about">
                 <h2 style="margin-bottom:20px">About me</h2>

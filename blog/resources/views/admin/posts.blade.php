@@ -45,6 +45,7 @@
                                                     </select> entries
                                                 </label>
                                             </div>
+
                                             <div id="example1_filter" class="dataTables_filter">
                                                 <label>Search:
                                                     <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1">
@@ -427,4 +428,21 @@
 
 @endsection
 @section('script')
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+            });
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
 @endsection
