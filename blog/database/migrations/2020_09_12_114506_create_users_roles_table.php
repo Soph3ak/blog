@@ -17,7 +17,6 @@ class CreateUsersRolesTable extends Migration
             $table->bigIncrements('id');
             $table->foreignId('users_id')->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('roles_id')->constrained('roles')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 

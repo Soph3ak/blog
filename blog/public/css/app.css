@@ -30,3 +30,15 @@ html.os-html,html.os-html>.os-host{display:block;overflow:hidden;box-sizing:bord
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Hanuman";
 }
 
+th.action {
+  text-align: center;
+}
+
+th.action::after {
+  color: #c3e6cb;
+}
+
+th.action::before {
+  color: #c3e6cb;
+}
+

@@ -8,6 +8,7 @@
         div.row th:first-child{
             width: 40%;
         }
+
         @media screen and (max-width: 600px) {
             tbody i.mr-1{
                 margin-right: 0!important;
@@ -45,9 +46,31 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-{{--                            <div class="card-header">--}}
+                           <div class="card-header">
 {{--                                <h3 class="card-title"></h3>--}}
-{{--                            </div>--}}
+                               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-plus mr-1"></i>Add Post</button>
+                               <div class="modal fade show" id="modal-lg" style="display: block; padding-right: 17px;" aria-modal="true" role="dialog">
+                                   <div class="modal-dialog modal-lg">
+                                       <div class="modal-content">
+                                           <div class="modal-header">
+                                               <h4 class="modal-title">Large Modal</h4>
+                                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                   <span aria-hidden="true">×</span>
+                                               </button>
+                                           </div>
+                                           <div class="modal-body">
+                                               <p>One fine body…</p>
+                                           </div>
+                                           <div class="modal-footer justify-content-between">
+                                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                               <button type="button" class="btn btn-primary">Save changes</button>
+                                           </div>
+                                       </div>
+                                       <!-- /.modal-content -->
+                                   </div>
+                                   <!-- /.modal-dialog -->
+                               </div>
+                           </div>
                             <!-- /.card-header -->
                             <div class="card-body">
                                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4">
@@ -60,7 +83,7 @@
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">អ្នកនិពន្ធ</th>
                                                         <th class="sorting_desc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="កាលបរិច្ឆេទ: activate to sort column ascending" aria-sort="descending">កាលបរិច្ឆេទ</th>
                                                         <th class="sorting" tabindex="0" aria-controls="example1" rowspan="" colspan="1" aria-label="CSS grade: activate to sort column ascending">Status</th>
-                                                        <th class="" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="" style="color: #c3e6cb"></th>
+                                                        <th class="action" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="" style=""><span class="text-dark">Actions</span></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -612,10 +635,10 @@
                                                 </tbody>
                                                 <tfoot>
                                                 <tr>
-                                                    <th rowspan="1" colspan="1">Rendering engine</th>
-                                                    <th rowspan="1" colspan="1">Browser</th>
-                                                    <th rowspan="1" colspan="1">Platform(s)</th>
-                                                    <th rowspan="1" colspan="1">Engine version</th>
+                                                    <th rowspan="1" colspan="1">ចំណងជើង</th>
+                                                    <th rowspan="1" colspan="1">អ្នកនិពន្ធ</th>
+                                                    <th rowspan="1" colspan="1">កាលបរិច្ឆេទ</th>
+                                                    <th rowspan="1" colspan="1">Status</th>
                                                     <th rowspan="1" colspan="1"></th>
                                                 </tr>
                                                 </tfoot>
@@ -637,7 +660,7 @@
 
 @endsection
 @section('script')
-    <script>
+    <script type="text/javascript">
         $(function () {
             $("#example1").DataTable({
                 "responsive": true,
