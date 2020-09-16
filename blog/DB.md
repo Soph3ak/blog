@@ -1,7 +1,8 @@
 +Posts          =======belongsTo(User) , belongsToMany(Category) , hasMany(Comment)=======
     - id -> PK
     - title
-    - paragraph      
+    - paragraph     
+    - status 
     - posted_by -> FK(Users) 
     - timestamp
     
