@@ -2,6 +2,7 @@
     - id -> PK
     - title
     - paragraph     
+    - image
     - status 
     - posted_by -> FK(Users) 
     - timestamp
@@ -40,10 +41,6 @@
     - commented_by  -> FK(Users)
     - timestamp
     
-composer install
-npm install
-cp .env.example .env
-php artisan key:generate
     
 
 
