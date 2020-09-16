@@ -5,9 +5,9 @@ window._ = require('lodash');
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
-// window.Popper = require('popper.js').default;
+/*window.Popper = require('popper.js').default;*/
 
-// require('popper.js');
+
 window.$=window.jQuery=require('jquery');
 require('bootstrap');
 require('admin-lte');
