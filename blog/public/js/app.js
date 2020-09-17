@@ -2878,11 +2878,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
-    upload: function upload(event) {
+    greet: function greet(event) {
       $("#file").click();
     }
   }
 });
+
+function thisFileUpload() {
+  document.getElementById("file").click();
+}
 
 /***/ }),
 
@@ -55488,7 +55492,7 @@ var render = function() {
                     {
                       staticClass: "btn btn-primary btn-lg",
                       staticStyle: { "max-width": "225px" },
-                      on: { click: _vm.upload }
+                      on: { click: _vm.greet }
                     },
                     [
                       _c("i", { staticClass: "fas fa-upload" }),
