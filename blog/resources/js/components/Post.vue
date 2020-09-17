@@ -638,7 +638,7 @@
                                 </button>-->
                                 <input type="file" id="file" style="display:none;" />
                                 <!--<button id="button" name="button" value="Upload" v-on:click="greet">Upload</button>-->
-                                <button class="btn btn-primary btn-lg" style="max-width: 225px;" v-on:click="greet"><i class="fas fa-upload"></i>
+                                <button class="btn btn-primary btn-lg" style="max-width: 225px;" v-on:click="upload"><i class="fas fa-upload"></i>
                                     Upload Image
                                 </button>
                             </div>
@@ -668,12 +668,9 @@
 <script>
     export default {
         methods: {
-            greet: function (event) {
+            upload: function (event) {
                 $("#file").click();
             }
         }
-    }
-    function thisFileUpload() {
-        document.getElementById("file").click();
     }
 </script>
