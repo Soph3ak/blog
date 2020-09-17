@@ -616,7 +616,7 @@
         <div class="modal fade hide" id="modal-lg" style="display: none; padding-right: 17px;" aria-modal="true" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header bg-primary">
+                    <div class="modal-header bg-yellow">
                         <h4 class="modal-title">Add Post</h4>
                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
@@ -632,21 +632,19 @@
                             <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                         </div>
                         <div class="row">
-                            <div class="col-6">
-                                <!--<button class="btn btn-primary btn-lg" style="max-width: 225px;"><i class="fas fa-upload"></i>
-                                    Upload Image
-                                </button>-->
-                                <input type="file" id="file" style="display:none;" />
-                                <!--<button id="button" name="button" value="Upload" v-on:click="greet">Upload</button>-->
-                                <button class="btn btn-primary btn-lg" style="max-width: 225px;" v-on:click="greet"><i class="fas fa-upload"></i>
-                                    Upload Image
-                                </button>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group clearfix">
-                                    <div class="icheck-primary d-inline">
-                                        <input type="checkbox" id="checkboxPrimary1">
-                                        <label for="checkboxPrimary1">Keep as Private</label>
+                            <div class="col-12 d-flex justify-content-between">
+                                <div>
+                                    <input type="file" id="file" style="display:none;" />
+                                    <button class="btn btn-primary btn-sm"  v-on:click="upload"><i class="fas fa-upload"></i>
+                                        Upload Image
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="form-group clearfix">
+                                        <div class="icheck-primary d-inline">
+                                            <input type="checkbox" id="checkboxPrimary1">
+                                            <label for="checkboxPrimary1">Keep as Private</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -668,7 +666,7 @@
 <script>
     export default {
         methods: {
-            greet: function (event) {
+            upload: function (event) {
                 $("#file").click();
             }
         }
