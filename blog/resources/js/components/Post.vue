@@ -675,5 +675,5 @@
     }
     function thisFileUpload() {
         document.getElementById("file").click();
-    };
+    }
 </script>
