@@ -27,7 +27,8 @@
                             <div class="card">
                                 <div class="card-header">
                                     <!-- <h3 class="card-title"></h3> -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-plus mr-1"></i>Add Post</button>
+                                    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-plus mr-1"></i>Add Post</button>-->
+                                    <a href="posts/create" class="btn btn-primary"><i class="fas fa-plus mr-1"></i>Add Post</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -613,7 +614,7 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <div class="modal fade hide" id="modal-lg" style="display: none; padding-right: 17px;" aria-modal="true" role="dialog">
+        <!--<div class="modal fade hide" id="modal-lg" style="display: none; padding-right: 17px;" aria-modal="true" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header bg-yellow">
@@ -657,21 +658,18 @@
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
-                <!-- /.modal-content -->
+                &lt;!&ndash; /.modal-content &ndash;&gt;
             </div>
-            <!-- /.modal-dialog -->
-        </div>
+            &lt;!&ndash; /.modal-dialog &ndash;&gt;
+        </div>-->
     </div>
 </template>
 <script>
     export default {
         methods: {
-            upload: function (event) {
+            upload: function () {
                 $("#file").click();
             }
         }
-    }
-    function thisFileUpload() {
-        document.getElementById("file").click();
     }
 </script>

@@ -13,8 +13,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $title = 'All Posts';
-        return view('admin.posts')->withTitle($title);
+        return view('admin.posts');
     }
 
     /**
@@ -24,7 +23,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.newPost');
     }
 
     /**
