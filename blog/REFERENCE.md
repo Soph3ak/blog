@@ -7,5 +7,5 @@
   https://devmarketer.io/learn/setup-laravel-project-cloned-github-com
     composer install
     npm install
-    cp .env.example .env
+    copy .env.example .env
     php artisan key:generate
